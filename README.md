@@ -1,2 +1,2 @@
-# SQLAlchemy-Surfs-UP-
+# SQLAlchemy-Surfs-UP
 Practicing SQLAlchemy
