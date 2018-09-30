@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Climate App</title>
+</head>
+<body>
+
+<h1> Routes </h1>
+
+<ul>
+    <li><a href = "/api/v1.0/precipitation">/api/v1.0/precipitation</a></li>
+    <p>
+        * Query for the dates and temperature observations from the last year. <br>
+        * Convert the query results to a Dictionary using `date` as the key and `tobs` as the value.<br>
+        * Return the JSON representation of your dictionary.<br>
+    </p>
+    <li><a href = "/api/v1.0/stations">/api/v1.0/stations</a></li>
+    <p>
+        * Return a JSON list of stations from the dataset.
+    </p>
+    <li><a href="/api/v1.0/tobs">/api/v1.0/tobs</a></li>
+    <p>
+        * Return a JSON list of Temperature Observations (tobs) for the previous year
+    </p>
+    <li><a href="/api/v1.0/2016-08-23">/api/v1.0/2016-08-23</a> </li>
+    <li><a href="/api/v1.0/2015-08-23/2017-08-23">/api/v1.0/2015-08-23/2017-08-23</a> </li>
+    <p>
+        * Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given <br>
+        start or start-end range.<br>
+        * When given the start only, calculate `TMIN`, `TAVG`, and `TMAX` for all dates greater than and equal to the<br>
+        start date.<br>
+        * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start<br>
+        and end date inclusive.<br>
+    </p>
+</ul>
+<p>
+    # ## Hints<br>
+    # * You will need to join the station and measurement tables for some of the analysis queries.<br>
+    # * Use Flask `jsonify` to convert your API data into a valid JSON response object.<br>
+    # ## Copyright<br>
+    # Data Boot Camp Â©2018. All Rights Reserved.<br>
+</p>
+
+</body>
+</html>
+
+[I 11:30:56.356 NotebookApp] http://localhost:8888/?token=7394126493392f81a39041cb85bc0b714dfab3cbb51517f6
